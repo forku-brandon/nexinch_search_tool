@@ -80,6 +80,13 @@ if ($resut->num_rows > 0) {
   echo "<h4>" . "result: " .  "</h4>";
   while ($row = $resut->fetch_assoc()) {
     $content = $row["content"];
+    //asign the 'more data' row of the data base to the link variable
+    $link = $row["more data"];
+    //starting the sesion 
+    session_start();
+    //the $link variable is store in the session
+    $_SESSION['myVariable'] = $link;
+    //printing the title
     echo    "<h5>" . $row['header'] .  "</h5>" . "<br>";
     // editing the code to look presentable on the screen
     $parts = preg_split('/(?<=[.:])\s+/', $content);
@@ -88,8 +95,8 @@ if ($resut->num_rows > 0) {
       echo trim($part) . "<br><br>";
     }
     // end editing 
-    // links start
-    echo  "<a href='https://www.google.com/search?client=firefox-b-e&q=$content'>" . "click here to see more" . "</a><br>";
+    // this link directs you to the 'your-php-script.php' where the $link variable is displayed
+    echo  "<a href='your-php-script.php?link_clicked=true'>" . "click here to see more" . "</a><br>";
   }
   //link stop
 } else {
@@ -113,11 +120,6 @@ if ($result->num_rows > 0) {
 // Close the connection
 $conn->close();
 ?>
-
-
-
-
-
 
 
 

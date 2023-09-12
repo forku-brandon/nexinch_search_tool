@@ -45,9 +45,9 @@ To deploy and start using NEXICH SEARCHING TOOL, follow these simple steps:
 
 4. **Database Setup:** Set up the database according to the specifications provided in the documentation.
 
-5. **Start L3MON:** Launch the L3MON application.
+5. **Start nexinch search tool:** Launch the application.
 
-6. **Access the Interface:** Open your web browser and navigate to http://localhost:3000 to access the L3MON web interface.
+6. **Access the Interface:** Open your web browser and navigate to http://localhost to access the nexinch search tool web interface.
 
 For detailed installation instructions, troubleshooting, and advanced configuration options, please refer to the L3MON Documentation.
 

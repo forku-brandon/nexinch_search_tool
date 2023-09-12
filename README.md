@@ -1,6 +1,6 @@
 <span style="text-align:center; color: blue;">
 
-# NEXICH SEARCHING TOOL<br>A simple searching application design by the nexinch interns
+<h1># NEXICH SEARCHING TOOL</h1><br>A simple searching application design by the nexinch interns
 
 </span>
 
